@@ -1,0 +1,28 @@
+import numpy as np
+import pandas as pd
+
+lst=['USA','Germany','Italy','Japan']
+ind=['a','b','c','d']
+
+df=pd.DataFrame(lst)#ind,['country']
+print(df)
+
+from numpy.random import randn
+np.random.seed(101)
+
+df=pd.DataFrame(randn(5,4),index='A B C D E'.split(),columns='W X Y Z'.split())
+df
+
+df['X']
+
+type(df[['W','X']]) 
+
+df['new']=df['W']+df['Y']
+df
+
+df.drop('W',axis=1)
+df.drop(['W','Y'],axis=1)
+
+df.drop('A')
+
+df.drop(['B','C'])
