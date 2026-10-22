@@ -1,0 +1,27 @@
+import numpy as np
+import pandas as pd
+
+labels=['a','b','c']
+my_list=[10,20,30,999999]
+arr=np.arrray([10,20,30])
+d={'a':10,'b':20,'c':30}
+
+pd.Series(data=my_list)
+pd.Series(arr)
+pd.Series(arr,labels)
+pd.Series(d)
+pd.Series(data=labels)
+pd.Series([sum,print,len])
+
+ser1=pd.Series([1,2,3,4],index=['USA','Germany','USSR','Japam'])
+ser1
+
+ser2=pd.Series([1,2,5,4],index=['USA'.'Germany','Italy','Japan'])
+ser2
+
+ser1['Germany']
+ser2['Italy']
+ser1+ser2
+
+pd.__version__
+ser2.info
